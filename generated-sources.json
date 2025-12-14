@@ -1,11 +1,5 @@
 [
     {
-        "type": "git",
-        "url": "https://github.com/jazzfool/iced_video_player",
-        "commit": "bb5d9b5013b37e5a829996e92ee804b119677e2a",
-        "dest": "flatpak-cargo/git/iced_video_player-bb5d9b5"
-    },
-    {
         "type": "archive",
         "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/ab_glyph/ab_glyph-0.2.32.crate",
@@ -944,19 +938,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/cargo_metadata/cargo_metadata-0.10.0.crate",
-        "sha256": "b8de60b887edf6d74370fc8eb177040da4847d971d6234c7b13a6da324ef0caf",
-        "dest": "cargo/vendor/cargo_metadata-0.10.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"b8de60b887edf6d74370fc8eb177040da4847d971d6234c7b13a6da324ef0caf\", \"files\": {}}",
-        "dest": "cargo/vendor/cargo_metadata-0.10.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/cc/cc-1.2.49.crate",
         "sha256": "90583009037521a116abf44494efecd645ba48b6622457080f080b85544e2215",
         "dest": "cargo/vendor/cc-1.2.49"
@@ -1004,19 +985,6 @@
         "type": "inline",
         "contents": "{\"package\": \"d38f2da7a0a2c4ccf0065be06397cc26a81f4e528be095826eee9d4adbb8c60f\", \"files\": {}}",
         "dest": "cargo/vendor/cfb-0.7.3",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/cfg-expr/cfg-expr-0.4.1.crate",
-        "sha256": "6c2be76f06820200669a77ae59a8328c6b8fe4496e8fb7fed02f2806a442c5ff",
-        "dest": "cargo/vendor/cfg-expr-0.4.1"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"6c2be76f06820200669a77ae59a8328c6b8fe4496e8fb7fed02f2806a442c5ff\", \"files\": {}}",
-        "dest": "cargo/vendor/cfg-expr-0.4.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -3050,19 +3018,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/home/home-0.5.12.crate",
-        "sha256": "cc627f471c528ff0c4a49e1d5e60450c8f6461dd6d10ba9dcd3a61d3dff7728d",
-        "dest": "cargo/vendor/home-0.5.12"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"cc627f471c528ff0c4a49e1d5e60450c8f6461dd6d10ba9dcd3a61d3dff7728d\", \"files\": {}}",
-        "dest": "cargo/vendor/home-0.5.12",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/http/http-1.4.0.crate",
         "sha256": "e3ba2a386d7f85a81f119ad7498ebe444d2e22c2af0b86b069416ace48b3311a",
         "dest": "cargo/vendor/http-1.4.0"
@@ -3308,21 +3263,16 @@
         "dest-filename": ".cargo-checksum.json"
     },
     {
-        "type": "shell",
-        "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/iced_video_player-bb5d9b5/.\" \"cargo/vendor/iced_video_player\""
-        ]
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/iced_video_player/iced_video_player-0.6.0.crate",
+        "sha256": "5b836dad1567026b92b5f3eba21e3e9bea47b6b66392303bb07d91e82bb7401a",
+        "dest": "cargo/vendor/iced_video_player-0.6.0"
     },
     {
         "type": "inline",
-        "contents": "[package]\nname = \"iced_video_player\"\ndescription = \"A convenient video player widget for Iced\"\nhomepage = \"https://github.com/jazzfool/iced_video_player\"\nrepository = \"https://github.com/jazzfool/iced_video_player\"\nreadme = \"README.md\"\nkeywords = [ \"gui\", \"iced\", \"video\",]\ncategories = [ \"gui\", \"multimedia\",]\nversion = \"0.6.0\"\nauthors = [ \"jazzfool\",]\nedition = \"2024\"\nresolver = \"2\"\nlicense = \"MIT OR Apache-2.0\"\nexclude = [ \".media/test.mp4\",]\n\n[dependencies]\niced_wgpu = \"0.14\"\ngstreamer = \"0.23\"\ngstreamer-app = \"0.23\"\ngstreamer-base = \"0.23\"\ngstreamer-video = \"0.23\"\nglib = \"0.20\"\nlog = \"0.4\"\nthiserror = \"1\"\nurl = \"2\"\n\n[dependencies.iced]\nversion = \"0.14\"\nfeatures = [ \"image\", \"advanced\", \"wgpu\",]\n\n[package.metadata.nix]\nsystems = [ \"x86_64-linux\",]\napp = true\nbuild = true\nruntimeLibs = [ \"vulkan-loader\", \"wayland\", \"wayland-protocols\", \"libxkbcommon\", \"xorg.libX11\", \"xorg.libXrandr\", \"xorg.libXi\", \"gst_all_1.gstreamer\", \"gst_all_1.gstreamermm\", \"gst_all_1.gst-plugins-bad\", \"gst_all_1.gst-plugins-ugly\", \"gst_all_1.gst-plugins-good\", \"gst_all_1.gst-plugins-base\",]\nbuildInputs = [ \"libxkbcommon\", \"gst_all_1.gstreamer\", \"gst_all_1.gstreamermm\", \"gst_all_1.gst-plugins-bad\", \"gst_all_1.gst-plugins-ugly\", \"gst_all_1.gst-plugins-good\", \"gst_all_1.gst-plugins-base\",]\n\n[package.metadata.docs.rs]\nrustc-args = [ \"--cfg\", \"docsrs\",]\nrustdoc-args = [ \"--cfg\", \"docsrs\",]\ntargets = [ \"wasm32-unknown-unknown\",]\n",
-        "dest": "cargo/vendor/iced_video_player",
-        "dest-filename": "Cargo.toml"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": null, \"files\": {}}",
-        "dest": "cargo/vendor/iced_video_player",
+        "contents": "{\"package\": \"5b836dad1567026b92b5f3eba21e3e9bea47b6b66392303bb07d91e82bb7401a\", \"files\": {}}",
+        "dest": "cargo/vendor/iced_video_player-0.6.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -5772,19 +5722,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/realia/realia-0.2.0.crate",
-        "sha256": "302257043995a0112340992e75db7876d6755b9d583d957a6b10c183b04a991c",
-        "dest": "cargo/vendor/realia-0.2.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"302257043995a0112340992e75db7876d6755b9d583d957a6b10c183b04a991c\", \"files\": {}}",
-        "dest": "cargo/vendor/realia-0.2.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/redox_syscall/redox_syscall-0.4.1.crate",
         "sha256": "4722d768eff46b75989dd134e5c353f0d6296e5aaa3132e776cbdb56be7731aa",
         "dest": "cargo/vendor/redox_syscall-0.4.1"
@@ -6201,19 +6138,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/semver/semver-0.9.0.crate",
-        "sha256": "1d7eb9ef2c18661902cc47e535f9bc51b78acd254da71d375c2f6720d9a40403",
-        "dest": "cargo/vendor/semver-0.9.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"1d7eb9ef2c18661902cc47e535f9bc51b78acd254da71d375c2f6720d9a40403\", \"files\": {}}",
-        "dest": "cargo/vendor/semver-0.9.0",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/semver/semver-1.0.27.crate",
         "sha256": "d767eb0aabc880b29956c35734170f26ed551a859dbd361d140cdbeca61ab1e2",
         "dest": "cargo/vendor/semver-1.0.27"
@@ -6222,19 +6146,6 @@
         "type": "inline",
         "contents": "{\"package\": \"d767eb0aabc880b29956c35734170f26ed551a859dbd361d140cdbeca61ab1e2\", \"files\": {}}",
         "dest": "cargo/vendor/semver-1.0.27",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/semver-parser/semver-parser-0.7.0.crate",
-        "sha256": "388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3",
-        "dest": "cargo/vendor/semver-parser-0.7.0"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"388a1df253eca08550bef6c72392cfe7c30914bf41df5269b68cbd6ff8f570a3\", \"files\": {}}",
-        "dest": "cargo/vendor/semver-parser-0.7.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -6976,19 +6887,6 @@
         "type": "inline",
         "contents": "{\"package\": \"df7f62577c25e07834649fc3b39fafdc597c0a3527dc1c60129201ccfcbaa50c\", \"files\": {}}",
         "dest": "cargo/vendor/target-lexicon-0.13.3",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/target-spec/target-spec-0.4.1.crate",
-        "sha256": "57947f86499434720da2a3ecaa6d1d88c44088a3985358fb7f4e8f7e0a8120d8",
-        "dest": "cargo/vendor/target-spec-0.4.1"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"57947f86499434720da2a3ecaa6d1d88c44088a3985358fb7f4e8f7e0a8120d8\", \"files\": {}}",
-        "dest": "cargo/vendor/target-spec-0.4.1",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -7865,19 +7763,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/version-compare/version-compare-0.0.10.crate",
-        "sha256": "d63556a25bae6ea31b52e640d7c41d1ab27faba4ccb600013837a3d0b3994ca1",
-        "dest": "cargo/vendor/version-compare-0.0.10"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"d63556a25bae6ea31b52e640d7c41d1ab27faba4ccb600013837a3d0b3994ca1\", \"files\": {}}",
-        "dest": "cargo/vendor/version-compare-0.0.10",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/version-compare/version-compare-0.2.1.crate",
         "sha256": "03c2856837ef78f57382f06b2b8563a2f512f7185d732608fd9176cb3b8edf0e",
         "dest": "cargo/vendor/version-compare-0.2.1"
@@ -8328,19 +8213,6 @@
         "type": "inline",
         "contents": "{\"package\": \"afdcf84c395990db737f2dd91628706cb31e86d72e53482320d368e52b5da5eb\", \"files\": {}}",
         "dest": "cargo/vendor/wgpu-types-27.0.1",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/which/which-4.4.2.crate",
-        "sha256": "87ba24419a2078cd2b0f2ede2691b6c66d8e47836da3b6db8265ebad47afbfc7",
-        "dest": "cargo/vendor/which-4.4.2"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"87ba24419a2078cd2b0f2ede2691b6c66d8e47836da3b6db8265ebad47afbfc7\", \"files\": {}}",
-        "dest": "cargo/vendor/which-4.4.2",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -9697,7 +9569,7 @@
     },
     {
         "type": "inline",
-        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n\n[source.\"https://github.com/jazzfool/iced_video_player\"]\ngit = \"https://github.com/jazzfool/iced_video_player\"\nreplace-with = \"vendored-sources\"\nrev = \"bb5d9b5013b37e5a829996e92ee804b119677e2a\"\n",
+        "contents": "[source.vendored-sources]\ndirectory = \"cargo/vendor\"\n\n[source.crates-io]\nreplace-with = \"vendored-sources\"\n",
         "dest": "cargo",
         "dest-filename": "config"
     }
