@@ -1,12 +1,12 @@
 app-id: com.mtkennerly.madamiru
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: "26.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.llvm20
+  - org.freedesktop.Sdk.Extension.llvm22
 build-options:
-  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm20/bin
+  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm22/bin
   env:
     CARGO_HOME: /run/build/madamiru/cargo
 finish-args:
@@ -42,5 +42,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/mtkennerly/madamiru
-        tag: v0.4.1
+        tag: v0.5.0
       - generated-sources.json
